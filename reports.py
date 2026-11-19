@@ -1,6 +1,6 @@
 def find_product_by_name(products, name):
     for product in products:
-        if product["name"].lower() == name:
+        if product["name"].lower() == name.lower():
             return product
     return None
 

@@ -9,7 +9,7 @@ from reports import (
     revenue_summary,
 )
 
-#help me
+
 def print_product_table(products):
     print("ID     NAME           CATEGORY       PRICE    STOCK")
     print("-" * 55)

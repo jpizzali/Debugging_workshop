@@ -36,7 +36,7 @@ def process_order(order, products, customers, tax_rates):
     subtotal = calculate_subtotal(order, products)
     discounts = apply_discounts(order, customer, products, subtotal)
     tax = calculate_tax(customer, discounts, tax_rates)
-    shipping = calculate_shipping(discounts)
+    shipping = calculate_shipping(subtotal)
 
     total = discounts["discounted_subtotal"] + tax + shipping
 
